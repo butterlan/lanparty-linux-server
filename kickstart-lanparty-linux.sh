@@ -10,7 +10,7 @@ echo "### Checking out from GIT"
 test -d "/root/scripts" || mkdir -p $USERHOME/scripts
 if ! test -d /root/scripts/lanparty/.git
 then
-    git clone --depth 1 https://github.com/apefrei/lanparty-linux-server.git /root/scripts/lanparty >> /dev/null 2>&1
+    git clone --depth 1 https://github.com/butterlan/lanparty-linux-server.git /root/scripts/lanparty >> /dev/null 2>&1
 fi
 
 chmod -R +x /root/scripts/lanparty

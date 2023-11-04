@@ -5,7 +5,7 @@ OLDDIR="`pwd`"
 # re-clone whole git repo
 cd ~
 rm -rf /root/scripts/lanparty
-git clone --depth 1 https://github.com/apefrei/lanparty-linux-server.git /root/scripts/lanparty >> /dev/null 2>&1
+git clone --depth 1 https://github.com/butterlan/lanparty-linux-server.git /root/scripts/lanparty >> /dev/null 2>&1
 cd /root/scripts/lanparty
 
 # prechecks
