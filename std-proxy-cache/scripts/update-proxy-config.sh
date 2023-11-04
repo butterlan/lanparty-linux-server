@@ -2,6 +2,14 @@
 
 source /root/scripts/lanparty/common.inc
 
+#Define NGINX Proxy vars
+CACHE_INDEX_SIZE=
+CACHE_DISK_SIZE=
+CACHE_MAX_AGE=
+UPSTREAM_DNS=
+LOGFILE_RETENTION=
+PRXCFG="/root/.prxcfg"
+
 service nginx stop
 
 rm -rf /etc/nginx/conf.d
