@@ -9,6 +9,7 @@ CACHE_MAX_AGE=
 UPSTREAM_DNS=
 LOGFILE_RETENTION=
 PRXCFG="/root/.prxcfg"
+source "$PRXCFG"
 
 service nginx stop
 
