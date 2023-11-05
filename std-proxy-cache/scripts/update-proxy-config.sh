@@ -37,5 +37,6 @@ sed -i "s/CACHE_MAX_AGE/${CACHE_MAX_AGE}/" /etc/nginx/sites-available/cache.conf
 sed -i "s/CACHE_MAX_AGE/${CACHE_MAX_AGE}/" /etc/nginx/conf.d/20_proxy_cache_path.conf
 sed -i "s/UPSTREAM_DNS/${UPSTREAM_DNS}/" /etc/nginx/sites-available/cache.conf.d/10_root.conf
 sed -i "s/UPSTREAM_DNS/${UPSTREAM_DNS}/" /etc/nginx/stream-available/10_sni.conf
+sed -i "s/UPSTREAM_DNS/${UPSTREAM_DNS}/" /etc/nginx/sites-available/upstream.conf.d/10_resolver.conf
 
 service nginx start
