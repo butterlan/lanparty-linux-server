@@ -6,6 +6,7 @@ OLDDIR="`pwd`"
 cd ~
 rm -rf /root/scripts/lanparty
 git clone --depth 1 https://github.com/butterlan/lanparty-linux-server.git /root/scripts/lanparty >> /dev/null 2>&1
+chmod -R +x /root/scripts/lanparty
 cd /root/scripts/lanparty
 
 # prechecks
