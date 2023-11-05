@@ -35,7 +35,7 @@ echo "INFLUX_PW=yourpass" >> /root/.stdcfg
 * **INFLUX_IP** will be the timeseries database you send your metrics to
 ##### 3) Kickstart the installation
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/apefrei/lanparty-linux-server/master/kickstart-lanparty-linux.sh)
+bash <(curl -s https://raw.githubusercontent.com/butterlan/lanparty-linux-server/master/kickstart-lanparty-linux.shh)
 ```
 ## Components
 ### [A] Nginx High-Performance Proxy Cache for Game-Download-Clients (Steam, Epic Store, ...)
@@ -65,13 +65,10 @@ Automated installation of DOCKER and PORTAINER with Butterlan Templates
 * **Rocky Linux 9 minimal** Installation
 * Bootstrapped with Kickstart Script
 * Fixed IP-Address(es) are highly recommendet
-* If you set USE_REVERSE_PROXY="yes", it will always use letsencrypt and therefore the other params are mandatory
-  * This only works if your services are public reachable on HTTP
+* If you have a Portainer Business License, leave "USE_PORTAINER_BUSINESS" on yes (Portainer Business is free, up to 5 hosts)
 ##### 2) Configuration
 ```shell
-echo 'USE_REVERSE_PROXY="no"' > /root/.dkrcfg
-echo 'LETSENCRYPT_EMAIL="your@email.com"' >> /root/.dkrcfg
-echo 'PORTAINER_VHOSTNAME="your.domain.com"' >> /root/.dkrcfg
+echo 'USE_PORTAINER_BUSINESS="yes"' > /root/.dkrcfg
 ```
 ##### 3) Install
 ```shell

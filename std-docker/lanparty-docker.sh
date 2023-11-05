@@ -17,9 +17,7 @@ touch $LOGFILE
 cd $DKR_PATH
 
 # install params
-USE_REVERSE_PROXY=
-LETSENCRYPT_EMAIL=
-PORTAINER_VHOSTNAME=
+USE_PORTAINER_BUSINESS=
 DKRCFG="/root/.dkrcfg"
 if ! test -f "/root/.dkrcfg"
 then

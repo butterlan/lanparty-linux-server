@@ -27,6 +27,8 @@ ln -sf /etc/nginx/stream-available/* /etc/nginx/stream-enabled/
 mkdir -p /etc/nginx/sites-enabled
 ln -sf /etc/nginx/sites-available/* /etc/nginx/sites-enabled/
 
+chmod -R +x /root/scripts/lanparty
+
 # Configure variables
 set -e
 sed -i "s/CACHE_INDEX_SIZE/${CACHE_INDEX_SIZE}/" /etc/nginx/conf.d/20_proxy_cache_path.conf
